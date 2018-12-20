@@ -1,17 +1,18 @@
 /// @description Player Movement
-if keyboard_check(vk_right) {
-	hspeed_ = 4;
-} else if keyboard_check(vk_left) {
-	hspeed_ = -4;
+var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
+
+if hinput != 0 {
+	hspeed_ += hinput*acceleration_;
+	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);
 } else {
-	hspeed_ = 0;
+	hspeed_ = lerp(hspeed_, 0, friction_);
 }
 
 if !place_meeting(x, y+1, o_solid) {
 	vspeed_ += gravity_;
 } else {
 	if keyboard_check_pressed(vk_up) {
-		vspeed_ = -16;
+		vspeed_ = jump_hight_;
 	}
 }
 
