@@ -13,6 +13,8 @@ if !place_meeting(x, y+1, o_solid) {
 } else {
 	if keyboard_check_pressed(vk_up) {
 		vspeed_ = jump_hight_;
+		x_scale_ = image_xscale*.8;
+		y_scale_ = image_yscale*1.4;
 	}
 }
 
@@ -32,3 +34,7 @@ if place_meeting(x, y+vspeed_, o_solid) {
 	vspeed_ = 0;
 }
 y += vspeed_;
+
+// Move back to noraml scale
+x_scale_ = lerp(x_scale_, image_xscale, .1);
+y_scale_ = lerp(y_scale_, image_yscale, .1);
