@@ -31,11 +31,27 @@
     },
     "resources": [
         {
+            "Key": "01ebd862-ed51-47a0-9e9b-fbdcafe15502",
+            "Value": {
+                "id": "ca5e2046-0fed-46ee-bb9c-091c06c46fd3",
+                "resourcePath": "scripts\\move_push\\move_push.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "07fdad74-fa94-438e-95a9-fa196e478ecc",
             "Value": {
                 "id": "a26811d1-7ac6-442a-9462-b7e9b0c1b226",
                 "resourcePath": "views\\07fdad74-fa94-438e-95a9-fa196e478ecc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0f981727-b976-4f9c-8e24-7d9a917bdb7b",
+            "Value": {
+                "id": "953de223-d837-4c98-ac95-8fda1521092e",
+                "resourcePath": "objects\\o_enemy\\o_enemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -132,6 +148,22 @@
                 "id": "18f7f1df-2cc8-435c-a8f9-8158219ccd75",
                 "resourcePath": "objects\\o_player\\o_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "623b24db-fa31-48c5-911a-00661b8d2782",
+            "Value": {
+                "id": "2503ae4b-5639-428d-8679-b5677ec2354e",
+                "resourcePath": "scripts\\move\\move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "651329ee-be89-4148-8bbe-bd3a13b0bb39",
+            "Value": {
+                "id": "3d4a13d9-b8df-41bb-9933-2c18d539bc46",
+                "resourcePath": "sprites\\s_enemy\\s_enemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -248,7 +280,8 @@
         }
     ],
     "script_order": [
-        
+        "623b24db-fa31-48c5-911a-00661b8d2782",
+        "01ebd862-ed51-47a0-9e9b-fbdcafe15502"
     ],
     "tutorial": ""
 }
