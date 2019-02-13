@@ -17,3 +17,7 @@ if !place_meeting(x, y, o_enemy) {
 if health_ <= 0 {
 	instance_destroy();
 }
+
+if distance_to_object(o_player) < 48 {
+	state_ = ATTACK_;
+}

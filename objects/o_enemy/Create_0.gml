@@ -6,6 +6,9 @@ hspeed_push_ = 0
 vspeed_push_ = 0
 health_ = 4;
 
-chase_ = true;
-attack_ = false;
-hurt_ = false;
+// States
+MOVEMENT_ = 0;
+ATTACK_ = 1;
+HIT_ = 2;
+
+state_ = MOVEMENT_;
