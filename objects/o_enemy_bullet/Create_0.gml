@@ -1,3 +1,3 @@
 /// @description Move towards the mouse
-speed = 8;
+speed = 4;
 depth = -1;
