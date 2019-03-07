@@ -1,16 +1,21 @@
-if place_meeting(x+hspeed_, y, o_solid) {
-	while !place_meeting(x+sign(hspeed_), y, o_solid) {
-		x += sign(hspeed_);
+///@param hspeed
+///@param vspeed
+var hspd = argument0;
+var vspd = argument1;
+
+if place_meeting(x+hspd, y, o_solid) {
+	while !place_meeting(x+sign(hspd), y, o_solid) {
+		x += sign(hspd);
 	}
-	hspeed_ = 0;
+	hspd = 0;
 }
 
-x += hspeed_;
+x += hspd;
 
-if place_meeting(x, y+vspeed_, o_solid) {
-	while !place_meeting(x, y+sign(vspeed_), o_solid) {
-		y += sign(vspeed_);
+if place_meeting(x, y+vspd, o_solid) {
+	while !place_meeting(x, y+sign(vspd), o_solid) {
+		y += sign(vspd);
 	}
-	vspeed_ = 0;
+	vspd = 0;
 }
-y += vspeed_;
+y += vspd;
