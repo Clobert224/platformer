@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "fa342fb5-bc7b-47e3-b20c-1a7cd47d1ecc",
+            "Value": {
+                "id": "7e5511f2-d551-400e-9ba9-01ef5f2786c4",
+                "resourcePath": "sprites\\s_obsticle\\s_obsticle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fdc635c4-9a8e-49e2-b1bb-1e66e6cf1d1c",
             "Value": {
                 "id": "b03f08c4-58f1-4b09-95a3-caef0998afb2",
