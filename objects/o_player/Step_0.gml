@@ -15,6 +15,8 @@ if hinput != 0 {
 
 if !place_meeting(x, y+1, o_solid) {
 	vspeed_ += gravity_;
+	image_speed = 0;
+	image_index
 } else {
 	if keyboard_check_pressed(vk_up) {
 		vspeed_ = jump_hight_;
