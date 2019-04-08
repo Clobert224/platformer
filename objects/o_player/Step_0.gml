@@ -9,6 +9,7 @@ var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 if hinput != 0 {
 	hspeed_ += hinput*acceleration_;
 	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);
+	sprite_index = sprite_run
 	image_speed = .6;
 } else {
 	hspeed_ = lerp(hspeed_, 0, friction_);
@@ -19,7 +20,7 @@ if hinput != 0 {
 if !place_meeting(x, y+1, o_solid) {
 	vspeed_ += gravity_;
 	image_speed = 0;
-	image_index = 4;
+	sprite_index = sprite_idle
 } else {
 	if keyboard_check_pressed(vk_up) {
 		vspeed_ = jump_hight_;
@@ -35,6 +36,7 @@ if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
 	x_scale_ = image_xscale*1.4;
 	y_scale_ = image_yscale*.8;
 	vspeed_ = 0;
+	y = ceil(y);
 }
 
 // Move back to noraml scale

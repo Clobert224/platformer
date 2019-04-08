@@ -6,7 +6,7 @@ gravity_ = .5;
 acceleration_ = 1;
 friction_ = .3;
 jump_hight_ = -10;
-health_ = 5;
+health_ = 500;
 
 // Map  the keys
 keyboard_set_map(ord("D"), vk_right);
@@ -21,3 +21,8 @@ alarm[0] =bullet_cooldown_;
 // Scale variables
 x_scale_ = image_xscale;
 y_scale_ = image_yscale;
+
+// sprites
+sprite_run  = s_player_run
+sprite_jump = s_player_jump
+sprite_idle = s_player_idle
