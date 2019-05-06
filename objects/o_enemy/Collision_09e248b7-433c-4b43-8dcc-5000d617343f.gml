@@ -1,4 +1,6 @@
 /// @description soft collide
-var dir = point_direction(other.x, other.y, x, y);
-hspeed_push_ += lengthdir_x(.25, dir);
-vspeed_push_ += lengthdir_y(.25, dir);
+if point_in_rectangle(x, y, 0, 0, room_width, room_height) {
+	var dir = point_direction(other.x, other.y, x, y);
+	speed_push_[h] += lengthdir_x(.25, dir);
+	speed_push_[v] += lengthdir_y(.25, dir);
+}

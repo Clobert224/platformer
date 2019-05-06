@@ -40,5 +40,5 @@ if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
 }
 
 // Move back to noraml scale
-x_scale_ = lerp(x_scale_, image_xscale, .1);
-y_scale_ = lerp(y_scale_, image_yscale, .1);
+x_scale_ = lerp(x_scale_, image_xscale, .2);
+y_scale_ = lerp(y_scale_, image_yscale, .2);
