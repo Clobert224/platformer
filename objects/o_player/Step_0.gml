@@ -7,23 +7,23 @@ if health_ <= 0 {
 var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 if hinput != 0 {
-	hspeed_ += hinput*acceleration_;
-	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);
+	speed_[h] += hinput*acceleration_;
+	speed_[h] = clamp(hspeed_, -max_hspeed_, max_hspeed_);
 	sprite_index = sprite_run
 	image_speed = .6;
 } else {
-	hspeed_ = lerp(hspeed_, 0, friction_);
+	speed_[h] = lerp(speed_[h], 0, friction_);
 	image_speed = 0;
 	image_index = 0;
 }
 
 if !place_meeting(x, y+1, o_solid) {
-	vspeed_ += gravity_;
+	speed_[v] += gravity_;
 	image_speed = 0;
 	sprite_index = sprite_idle
 } else {
 	if keyboard_check_pressed(vk_up) {
-		vspeed_ = jump_hight_;
+		speed_[v] = jump_hight_;
 		x_scale_ = image_xscale*.8;
 		y_scale_ = image_yscale*1.4;
 	}
