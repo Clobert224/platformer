@@ -5,13 +5,13 @@ if instance_exists(o_player) {
 var dir = point_direction(x, y, o_player.x, o_player.y);
 hspeed_ = lengthdir_x(speed_, dir);
 vspeed_ = lengthdir_y(speed_, dir);
-move(hspeed_, vspeed_);
+move(speed_[h], speed_[v]);
 
 	//Push force
-	move(hspeed_push_, vspeed_push_);
+	move(speed_push_[h], speed_push_[v]);
 	if !place_meeting(x, y, o_enemy) {
-		hspeed_push_ = lerp(hspeed_push_, 0, .1);
-		vspeed_push_ = lerp(vspeed_push_, 0, .1);
+		speed_push_[h] = lerp(speed_push_[h], 0, .1);
+		speed_push_[v] = lerp(speed_push_[v], 0, .1);
 	}
 
 	//Death
