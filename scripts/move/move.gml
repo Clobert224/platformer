@@ -1,7 +1,7 @@
 ///@param speed
 var speed_ = argument0;
-var h = 0;
-var v = 1;
+//var h = 0;
+//var v = 1;
 
 if place_meeting(x+speed_[h], y, o_solid) {
 	while !place_meeting(x+sign(speed_[h]), y, o_solid) {

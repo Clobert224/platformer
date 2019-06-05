@@ -8,7 +8,7 @@ var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 if hinput != 0 {
 	speed_[h] += hinput*acceleration_;
-	speed_[h] = clamp(hspeed_, -max_hspeed_, max_hspeed_);
+	speed_[h] = clamp(speed_[h], -max_speed_, max_speed_);
 	sprite_index = sprite_run
 	image_speed = .6;
 } else {
@@ -29,7 +29,7 @@ if !place_meeting(x, y+1, o_solid) {
 	}
 }
 
-move(hspeed_, vspeed_);
+move(speed_);
 
 //Check for landing
 if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
