@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "7369ddff-212c-4e5c-9149-cdf4e8c13dd5",
+            "Value": {
+                "id": "b0b40ea0-af17-4b00-9447-acfec7fe5aa8",
+                "resourcePath": "scripts\\enemy_fire_bullet\\enemy_fire_bullet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "861ef5c1-89b6-4d92-b188-4e526e981dcc",
             "Value": {
                 "id": "dbc7c29d-09fa-4e88-96a0-e81abcd8f6e1",
@@ -337,7 +345,8 @@
     ],
     "script_order": [
         "419546b6-dd43-4c32-a30e-07532930199d",
-        "623b24db-fa31-48c5-911a-00661b8d2782"
+        "623b24db-fa31-48c5-911a-00661b8d2782",
+        "7369ddff-212c-4e5c-9149-cdf4e8c13dd5"
     ],
     "tutorial": ""
 }

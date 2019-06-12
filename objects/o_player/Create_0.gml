@@ -1,11 +1,11 @@
 /// @description Create the variables
-speed_ = [0,0];
+speed_ = [1,1];
 max_speed_ = 4;
 gravity_ = .5;
 acceleration_ = 1;
 friction_ = .3;
-jump_hight_ = -10;
-health_ = 500;
+jump_height_ = -10;
+health_ = 5;
 
 // Map  the keys
 keyboard_set_map(ord("D"), vk_right);
